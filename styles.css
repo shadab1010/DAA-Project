@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(to top right, #60c3ff, #b37df3, #f66887);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Logo Behind Section */
+.logo-behind-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px; /* reduced height */
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.logo-behind {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px; /* smaller logo */
+  opacity: 0.12;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+}
+
+.title-text {
+  position: relative;
+  z-index: 2;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Form container */
+.form-box {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  padding: 20px 25px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Dropdowns */
+select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  min-width: 200px;
+  background: #fff;
+}
+
+/* Buttons */
+.btn {
+  padding: 9px 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #198754;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Result Box */
+#result {
+  font-size: 1rem;
+  background: #d0f4ff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  margin: 20px auto 10px;
+  max-width: 780px;
+  white-space: pre-wrap;
+  font-weight: 500;
+  color: #003049;
+}
+
+/* Map Canvas */
+#mapCanvas {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  max-width: 92%;
+  margin: 15px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(7px);
+}
